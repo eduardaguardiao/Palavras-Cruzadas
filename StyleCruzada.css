@@ -1,0 +1,238 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: pink;
+    width: 182vh;
+    height: 50%;
+    color: rgb(0, 0, 0);
+    font-family: 'VT323';
+
+}
+
+
+.container {
+    width: 1000px;
+    height: 1120px;
+    background-color: rgb(204, 132, 144);
+    position: relative;
+    top: 70px;
+    left: 240px;
+    border-radius: 15px;
+    font-family: 'VT323';
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.614);
+
+}
+
+.spanIniciar {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    left: 41.5%;
+    font-family: 'VT323';
+
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.imgBotao {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 51%;
+    top: 42%;
+}
+
+.perguntas {
+    left: 10px;
+    top: 10px;
+    height: 17%;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    padding: 15px;
+    background-color: rgba(240, 248, 255, 0.536);
+    overflow-y: scroll;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.linha {
+    background-color: black;
+    position: relative;
+    left: 31%;
+    top: 5%;
+    width: 3px;
+    height: 90%;
+}
+
+#tabela {
+    position: relative;
+    top: -720px;
+    left: 70px;
+    font-size: 36px;
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    margin: 0 auto;
+}
+
+.quadradoIncluso {
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid rgb(204, 132, 144);
+}
+
+.quadrado {
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+}
+
+.gitImg {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -50px;
+    left: 40px;
+}
+
+.btnValid {
+    width: 30px;
+    height: 18px;
+    background-color: rgb(6, 6, 6);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    color: aliceblue;
+}
+
+.perguntas input {
+    width: 150px;
+    padding: 4px;
+    border-radius: 7px;
+    border: none;
+}
+
+.perguntas button {
+    background-color: rgb(168, 79, 138);
+    width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: .35s;
+    color: #fff;
+}
+
+.perguntas button:hover {
+    letter-spacing: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #760957;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #BB72E6;
+}
+
+#q1 {
+    width: 100px;
+}
+
+#q2 {
+    width: 100px;
+}
+
+#q3 {
+    width: 100px;
+}
+
+#q4 {
+    width: 100px;
+}
+
+#q5 {
+    width: 100px;
+}
+
+#q6 {
+    width: 100px;
+}
+
+#q7 {
+    width: 100px;
+}
+
+#q8 {
+    width: 100px;
+}
+
+#q9 {
+    width: 100px;
+}
+
+#q10 {
+    width: 100px;
+}
+
+#q11 {
+    width: 100px;
+}
+
+#q12 {
+    width: 100px;
+}
+
+#q13 {
+    width: 100px;
+}
+
+#q14 {
+    width: 100px;
+}
+
+#q15 {
+    width: 100px;
+}
+
+#q16 {
+    width: 100px;
+}
+
+#q17 {
+    width: 100px;
+}
+
+#q18 {
+    width: 100px;
+}

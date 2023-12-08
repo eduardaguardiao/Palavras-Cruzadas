@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleCruzada.css">
+    <title>CRUZADINHA ARQUITETURA COMPUTACIONAL </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Palavras Cruzadas</h1>
+        <div class="perguntas">
+            <h3>Dicas</h3>
+            <div id="pergunta1">
+                <p>
+                    1 - Um chip responsável pelo processamento de dados em um computador e outros dispositivos
+                    eletrônicos,
+                    funcionando como o 'cérebro' desses equipamentos.
+                </p>
+                <input id="resposta1">
+                <button onclick="validarPergunta1()">Validar</button>
+            </div>
+            <div id="pergunta2">
+                <p>
+                    2 - É um circuito responsável por executar operações lógicas, cálculos como adição e multiplicação,
+                    além de
+                    operações booleanas (baseadas no sistema binário) complexas.
+                </p>
+                <input id="resposta2">
+                <button onclick="validarPergunta2()">Validar</button>
+            </div>
+            <div id="pergunta3">
+                <p>
+                    3 - Tipo de memória rápida e usados em pequenas quantidades para armazenamento de dados. A sua
+                    função é permitir que
+                    a CPU tenham acesso imediato a dados e instruções necessárias para a execução de operações lógicas
+                    ou
+                    aritméticas.
+                </p>
+                <input id="resposta3">
+                <button onclick="validarPergunta3()">Validar</button>
+            </div>
+            <div id="pergunta4">
+                <p>
+                    4 - É um tipo de memória que, permite apenas a leitura de dados e não a escrita. Sendo classificada
+                    como memória não volátil.
+                </p>
+                <input id="resposta4">
+                <button onclick="validarPergunta4()">Validar</button>
+            </div>
+            <div id="pergunta5">
+                <p>
+                    5 - O componente é responsável pela leitura dos conteúdos quando requeridos. Ou seja, de forma
+                    não-sequencial.
+                    Responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e
+                    para o funcionamento do próprio sistema operacional.
+                </p>
+                <input id="resposta5">
+                <button onclick="validarPergunta5()">Validar</button>
+            </div>
+            <div id="pergunta6">
+                <p>
+                    6 - Têm como principal característica a capacidade de permitir que dados sejam regravados no
+                    dispositivo.
+                    Isso é feito com o auxílio de um componente que emite luz ultravioleta. Nesse processo, os dados
+                    gravados
+                    precisam ser apagados por completo.
+                </p>
+                <input id="resposta6">
+                <button onclick="validarPergunta6()">Validar</button>
+            </div>
+            <div id="pergunta7">
+                <p>
+                    7 - Tecnologia de armazenamento de dados que usa uma memória não volátil. Isso quer dizer que nada é
+                    perdido
+                    quando é desligado, além de não exigir partes móveis ou uso excessivo de energia para funcionar.
+                </p>
+                <input id="resposta7">
+                <button onclick="validarPergunta7()">Validar</button>
+            </div>
+            <div id="pergunta8">
+                <p>
+                    8 - São não-voláteis, permitindo guardar os dados permanentemente. Como memórias externas, de
+                    armazenamento em massa, podemos citar os discos rígidos como o meio mais utilizado, uma série de
+                    discos óticos
+                    como CDs, DVDs e Blu-Rays, disquetes e fitas magnéticas.
+                </p>
+                <input id="resposta8">
+                <button onclick="validarPergunta8()">Validar</button>
+            </div>
+            <div id="pergunta9">
+                <p>
+                    9 - Tem acesso a memória, é um método para realização de operações de entrada e saída praticamente sem o intermediário da CPU.
+                </p>
+                <input id="resposta9">
+                <button onclick="validarPergunta9()">Validar</button>
+            </div>
+            <div id="pergunta10">
+                <p>
+                    10 - Uma entrada de controle de muitos circuitos integrados , como chips de memória, permitindo ativar ou desativar o circuito. Quando ativo, o componente pode ser endereçado; quando não está, o componente está no chamado modo de espera . A economia de energia resultante é apreciável, especialmente quando o número de circuitos desativados é grande (como é o caso dos chips que formam a memória principal de um computador, por exemplo).
+                </p>
+                <input id="resposta10">
+                <button onclick="validarPergunta10()">Validar</button>
+            </div>
+            <div id="pergunta11">
+                <p>
+                    11 - Servem como dois caminhos distintos dentro da unidade central de processamento (CPU) de um computador.
+                </p>
+                <input id="resposta11">
+                <button onclick="validarPergunta11()">Validar</button>
+            </div>
+            <div id="pergunta12">
+                <p>
+                    12 - Descreve o sistema responsável pela transmissão de dados entre participantes individuais em uma rede.
+                </p>
+                <input id="resposta12">
+                <button onclick="validarPergunta12()">Validar</button>
+            </div>
+            <div id="pergunta13">
+                <p>
+                    13 - Fabricado pela INTEL, aborda a utilização da microarquitetura Nehalem. Teve o inicio de sua fabricação em 9 de Setembro de 2009. 
+                </p>
+                <input id="resposta13">
+                <button onclick="validarPergunta13()">Validar</button>
+            </div>
+            <div id="pergunta14">
+                <p>
+                    14 - Fabricado pela INTEL, toma como base o excelente núcleo da micro arquitetura Core2. Teve o inicio de sua fabricação em meados de 2008.
+                    Principais características: quad-core, hyper-threading
+                    
+                </p>
+                <input id="resposta14">
+                <button onclick="validarPergunta14()">Validar</button>
+            </div>
+            <div id="pergunta15">
+                <p>
+                    15 - Representa dois núcleos.
+                </p>
+                <input id="resposta15">
+                <button onclick="validarPergunta15()">Validar</button>
+            </div>
+            <div id="pergunta16">
+                <p>
+                    16 - Representa quatro núcleos.
+                </p>
+                <input id="resposta16">
+                <button onclick="validarPergunta16()">Validar</button>
+            </div>
+            <div id="pergunta17">
+                <p>
+                    17 - Número de tarefas que ele é capaz de executar por vez. Uma pessoa é capaz de executar um número X de atividades, mas ela precisa concluir uma para iniciar outra.
+                </p>
+                <input id="resposta17">
+                <button onclick="validarPergunta17()">Validar</button>
+            </div>
+            <div id="pergunta18">
+                <p>
+                    18 - Uma memória de altíssima velocidade que funciona como um intermediário entre o processador e a RAM. Ela armazena temporariamente dados e instruções que são usados com frequência pelo chip, o que melhora o desempenho do sistema.
+                </p>
+                <input id="resposta18">
+                <button onclick="validarPergunta18()">Validar</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <table id="tabela">
+        <tr>
+            <td id="l1c1" class="quadrado"></td>
+            <td id="l1c2" class="quadrado"></td>
+            <td id="l1c3" class="quadrado"></td>
+            <td id="l1c4" class="quadrado"></td>
+            <td id="l1c5" class="quadrado"></td>
+            <td id="l1c6" class="quadrado"></td>
+            <td id="l1c7" class="quadrado"></td>
+            <td id="l1c8" class="quadrado"></td>
+            <td id="l1c9" class="quadrado"></td>
+            <td id="l1c10" class="quadrado"></td>
+            <td id="l1c11" class="quadrado"></td>
+            <td id="l1c12" class="quadrado"></td>
+            <td id="l1c13" class="quadrado"></td>
+            <td id="l1c14" class="quadrado">7</td>
+            <td id="l1c15" class="quadrado"></td>
+            <td id="l1c16" class="quadrado"></td>
+            <td id="l1c17" class="quadrado"></td>
+            <td id="l1c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l2c1" class="quadrado"></td>
+            <td id="l2c2" class="quadrado"></td>
+            <td id="l2c3" class="quadrado"></td>
+            <td id="l2c4" class="quadrado"></td>
+            <td id="l2c5" class="quadrado"></td>
+            <td id="l2c6" class="quadrado"></td>
+            <td id="l2c7" class="quadrado"></td>
+            <td id="l2c8" class="quadrado"></td>
+            <td id="l2c9" class="quadrado">2</td>
+            <td id="l2c10" class="quadrado"></td>
+            <td id="l2c11" class="quadrado"></td>
+            <td id="l2c12" class="quadrado"></td>
+            <td id="l2c13" class="quadrado"></td>
+            <td id="l2c14" class="quadradoIncluso"></td>
+            <td id="l2c15" class="quadrado"></td>
+            <td id="l2c16" class="quadrado"></td>
+            <td id="l2c17" class="quadrado"></td>
+            <td id="l2c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l3c1" class="quadrado"></td>
+            <td id="l3c2" class="quadrado"></td>
+            <td id="l3c3" class="quadrado"></td>
+            <td id="l3c4" class="quadrado"></td>
+            <td id="l3c5" class="quadrado"></td>
+            <td id="l3c6" class="quadrado">1</td>
+            <td id="l3c7" class="quadradoIncluso"></td>
+            <td id="l3c8" class="quadradoIncluso"></td>
+            <td id="l3c9" class="quadradoIncluso"></td>
+            <td id="l3c10" class="quadrado"></td>
+            <td id="l3c11" class="quadrado"></td>
+            <td id="l3c12" class="quadrado"></td>
+            <td id="l3c13" class="quadrado"></td>
+            <td id="l3c14" class="quadradoIncluso"></td>
+            <td id="l3c15" class="quadrado"></td>
+            <td id="l3c16" class="quadrado"></td>
+            <td id="l3c17" class="quadrado"></td>
+            <td id="l3c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l4c1" class="quadrado"></td>
+            <td id="l4c2" class="quadrado"></td>
+            <td id="l4c3" class="quadrado">6</td>
+            <td id="l4c4" class="quadrado"></td>
+            <td id="l4c5" class="quadrado">13</td>
+            <td id="l4c6" class="quadrado"></td>
+            <td id="l4c7" class="quadrado"></td>
+            <td id="l4c8" class="quadrado"></td>
+            <td id="l4c9" class="quadradoIncluso"></td>
+            <td id="l4c10" class="quadrado"></td>
+            <td id="l4c11" class="quadrado"></td>
+            <td id="l4c12" class="quadrado">4</td>
+            <td id="l4c13" class="quadrado"></td>
+            <td id="l4c14" class="quadradoIncluso"></td>
+            <td id="l4c15" class="quadrado"></td>
+            <td id="l4c16" class="quadrado"></td>
+            <td id="l4c17" class="quadrado"></td>
+            <td id="l4c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l5c1" class="quadrado">3</td>
+            <td id="l5c2" class="quadradoIncluso"></td>
+            <td id="l5c3" class="quadradoIncluso"></td>
+            <td id="l5c4" class="quadradoIncluso"></td>
+            <td id="l5c5" class="quadradoIncluso"></td>
+            <td id="l5c6" class="quadradoIncluso"></td>
+            <td id="l5c7" class="quadradoIncluso"></td>
+            <td id="l5c8" class="quadradoIncluso"></td>
+            <td id="l5c9" class="quadradoIncluso"></td>
+            <td id="l5c10" class="quadradoIncluso"></td>
+            <td id="l5c11" class="quadradoIncluso"></td>
+            <td id="l5c12" class="quadradoIncluso"></td>
+            <td id="l5c13" class="quadradoIncluso"></td>
+            <td id="l5c14" class="quadradoIncluso"></td>
+            <td id="l5c15" class="quadrado"></td>
+            <td id="l5c16" class="quadrado"></td>
+            <td id="l5c17" class="quadrado"></td>
+            <td id="l5c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l6c1" class="quadrado"></td>
+            <td id="l6c2" class="quadrado"></td>
+            <td id="l6c3" class="quadradoIncluso"></td>
+            <td id="l6c4" class="quadrado"></td>
+            <td id="l6c5" class="quadradoIncluso"></td>
+            <td id="l6c6" class="quadrado"></td>
+            <td id="l6c7" class="quadrado"></td>
+            <td id="l6c8" class="quadrado"></td>
+            <td id="l6c9" class="quadrado"></td>
+            <td id="l6c10" class="quadrado"></td>
+            <td id="l6c11" class="quadrado"></td>
+            <td id="l6c12" class="quadradoIncluso"></td>
+            <td id="l6c13" class="quadrado"></td>
+            <td id="l6c14" class="quadradoIncluso"></td>
+            <td id="l6c15" class="quadrado"></td>
+            <td id="l6c16" class="quadrado"></td>
+            <td id="l6c17" class="quadrado"></td>
+            <td id="l6c18" class="quadrado">9</td>
+        </tr>
+        <tr>
+            <td id="l7c1" class="quadrado"></td>
+            <td id="l7c2" class="quadrado"></td>
+            <td id="l7c3" class="quadradoIncluso"></td>
+            <td id="l7c4" class="quadrado"></td>
+            <td id="l7c5" class="quadrado"></td>
+            <td id="l7c6" class="quadrado"></td>
+            <td id="l7c7" class="quadrado"></td>
+            <td id="l7c8" class="quadrado"></td>
+            <td id="l7c9" class="quadrado">5</td>
+            <td id="l7c10" class="quadradoIncluso"></td>
+            <td id="l7c11" class="quadradoIncluso"></td>
+            <td id="l7c12" class="quadradoIncluso"></td>
+            <td id="l7c13" class="quadrado"></td>
+            <td id="l7c14" class="quadrado"></td>
+            <td id="l7c15" class="quadrado"></td>
+            <td id="l7c16" class="quadrado"></td>
+            <td id="l7c17" class="quadrado"></td>
+            <td id="l7c18" class="quadradoIncluso"></td>
+        </tr>
+        <tr>
+            <td id="l8c1" class="quadrado"></td>
+            <td id="l8c2" class="quadrado"></td>
+            <td id="l8c3" class="quadradoIncluso"></td>
+            <td id="l8c4" class="quadrado"></td>
+            <td id="l8c5" class="quadrado"></td>
+            <td id="l8c6" class="quadrado"></td>
+            <td id="l8c7" class="quadrado"></td>
+            <td id="l8c8" class="quadrado">14</td>
+            <td id="l8c9" class="quadrado"></td>
+            <td id="l8c10" class="quadrado"></td>
+            <td id="l8c11" class="quadrado"></td>
+            <td id="l8c12" class="quadrado"></td>
+            <td id="l8c13" class="quadrado"></td>
+            <td id="l8c14" class="quadrado"></td>
+            <td id="l8c15" class="quadrado"></td>
+            <td id="l8c16" class="quadrado"></td>
+            <td id="l8c17" class="quadrado"></td>
+            <td id="l8c18" class="quadradoIncluso"></td>
+        </tr>
+        <tr>
+            <td id="l9c1" class="quadrado"></td>
+            <td id="l9c2" class="quadrado">8</td>
+            <td id="l9c3" class="quadradoIncluso"></td>
+            <td id="l9c4" class="quadradoIncluso"></td>
+            <td id="l9c5" class="quadradoIncluso"></td>
+            <td id="l9c6" class="quadradoIncluso"></td>
+            <td id="l9c7" class="quadradoIncluso"></td>
+            <td id="l9c8" class="quadradoIncluso"></td>
+            <td id="l9c9" class="quadradoIncluso"></td>
+            <td id="l9c10" class="quadrado"></td>
+            <td id="l9c11" class="quadradoIncluso"></td>
+            <td id="l9c12" class="quadradoIncluso"></td>
+            <td id="l9c13" class="quadrado"></td>
+            <td id="l9c14" class="quadradoIncluso"></td>
+            <td id="l9c15" class="quadradoIncluso"></td>
+            <td id="l9c16" class="quadradoIncluso"></td>
+            <td id="l9c17" class="quadradoIncluso"></td>
+            <td id="l9c18" class="quadradoIncluso"></td>
+        </tr>
+        <tr>
+            <td id="l10c1" class="quadrado"></td>
+            <td id="l10c2" class="quadrado"></td>
+            <td id="l10c3" class="quadrado"></td>
+            <td id="l10c4" class="quadrado"></td>
+            <td id="l10c5" class="quadrado"></td>
+            <td id="l10c6" class="quadrado"></td>
+            <td id="l10c7" class="quadrado">17</td>
+            <td id="l10c8" class="quadradoIncluso"></td>
+            <td id="l10c9" class="quadrado"></td>
+            <td id="l10c10" class="quadrado"></td>
+            <td id="l10c11" class="quadrado"></td>
+            <td id="l10c12" class="quadrado"></td>
+            <td id="l10c13" class="quadrado"></td>
+            <td id="l10c14" class="quadrado"></td>
+            <td id="l10c15" class="quadrado"></td>
+            <td id="l10c16" class="quadrado"></td>
+            <td id="l10c17" class="quadrado"></td>
+            <td id="l10c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l11c1" class="quadrado"></td>
+            <td id="l11c2" class="quadrado"></td>
+            <td id="l11c3" class="quadrado"></td>
+            <td id="l11c4" class="quadrado">12</td>
+            <td id="l11c5" class="quadrado"></td>
+            <td id="l11c6" class="quadrado"></td>
+            <td id="l11c7" class="quadradoIncluso"></td>
+            <td id="l11c8" class="quadrado"></td>
+            <td id="l11c9" class="quadrado"></td>
+            <td id="l11c10" class="quadrado">10</td>
+            <td id="l11c11" class="quadrado"></td>
+            <td id="l11c12" class="quadrado"></td>
+            <td id="l11c13" class="quadrado">15</td>
+            <td id="l11c14" class="quadrado"></td>
+            <td id="l11c15" class="quadrado"></td>
+            <td id="l11c16" class="quadrado"></td>
+            <td id="l11c17" class="quadrado"></td>
+            <td id="l11c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l12c1" class="quadrado"></td>
+            <td id="l1c2" class="quadrado"></td>
+            <td id="l12c3" class="quadrado"></td>
+            <td id="l12c4" class="quadradoIncluso"></td>
+            <td id="l12c5" class="quadrado"></td>
+            <td id="l12c6" class="quadrado"></td>
+            <td id="l12c7" class="quadradoIncluso"></td>
+            <td id="l12c8" class="quadrado"></td>
+            <td id="l12c9" class="quadrado"></td>
+            <td id="l12c10" class="quadradoIncluso"></td>
+            <td id="l12c11" class="quadrado"></td>
+            <td id="l12c12" class="quadrado"></td>
+            <td id="l12c13" class="quadradoIncluso"></td>
+            <td id="l12c14" class="quadrado"></td>
+            <td id="l12c15" class="quadrado"></td>
+            <td id="l12c16" class="quadrado"></td>
+            <td id="l12c17" class="quadrado"></td>
+            <td id="l12c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l13c1" class="quadrado"></td>
+            <td id="l13c2" class="quadrado"></td>
+            <td id="l13c3" class="quadrado">11</td>
+            <td id="l13c4" class="quadradoIncluso"></td>
+            <td id="l13c5" class="quadradoIncluso"></td>
+            <td id="l13c6" class="quadradoIncluso"></td>
+            <td id="l13c7" class="quadradoIncluso"></td>
+            <td id="l13c8" class="quadradoIncluso"></td>
+            <td id="l13c9" class="quadradoIncluso"></td>
+            <td id="l13c10" class="quadradoIncluso"></td>
+            <td id="l13c11" class="quadrado"></td>
+            <td id="l13c12" class="quadradoIncluso"></td>
+            <td id="l13c13" class="quadradoIncluso"></td>
+            <td id="l13c14" class="quadradoIncluso"></td>
+            <td id="l13c15" class="quadrado"></td>
+            <td id="l13c16" class="quadrado"></td>
+            <td id="l13c17" class="quadrado"></td>
+            <td id="l13c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l14c1" class="quadrado"></td>
+            <td id="l14c2" class="quadrado"></td>
+            <td id="l14c3" class="quadrado"></td>
+            <td id="l14c4" class="quadradoIncluso"></td>
+            <td id="l14c5" class="quadrado"></td>
+            <td id="l14c6" class="quadrado"></td>
+            <td id="l14c7" class="quadradoIncluso"></td>
+            <td id="l14c8" class="quadrado"></td>
+            <td id="l14c9" class="quadrado"></td>
+            <td id="l14c10" class="quadrado"></td>
+            <td id="l14c11" class="quadrado">18</td>
+            <td id="l14c12" class="quadrado"></td>
+            <td id="l14c13" class="quadradoIncluso"></td>
+            <td id="l14c14" class="quadrado"></td>
+            <td id="l14c15" class="quadrado"></td>
+            <td id="l14c16" class="quadrado"></td>
+            <td id="l14c17" class="quadrado"></td>
+            <td id="l14c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l15c1" class="quadrado"></td>
+            <td id="l15c2" class="quadrado"></td>
+            <td id="l15c3" class="quadrado"></td>
+            <td id="l15c4" class="quadradoIncluso"></td>
+            <td id="l15c5" class="quadrado"></td>
+            <td id="l15c6" class="quadrado"></td>
+            <td id="l15c7" class="quadradoIncluso"></td>
+            <td id="l15c8" class="quadrado"></td>
+            <td id="l15c9" class="quadrado"></td>
+            <td id="l15c10" class="quadrado"></td>
+            <td id="l15c11" class="quadradoIncluso"></td>
+            <td id="l15c12" class="quadrado"></td>
+            <td id="l15c13" class="quadradoIncluso"></td>
+            <td id="l15c14" class="quadrado"></td>
+            <td id="l15c15" class="quadrado"></td>
+            <td id="l15c16" class="quadrado"></td>
+            <td id="l15c17" class="quadrado"></td>
+            <td id="l15c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l16c1" class="quadrado"></td>
+            <td id="l16c2" class="quadrado"></td>
+            <td id="l16c3" class="quadrado"></td>
+            <td id="l16c4" class="quadrado"></td>
+            <td id="l16c5" class="quadrado"></td>
+            <td id="l16c6" class="quadrado"></td>
+            <td id="l16c7" class="quadradoIncluso"></td>
+            <td id="l16c8" class="quadrado">16</td>
+            <td id="l16c9" class="quadradoIncluso"></td>
+            <td id="l16c10" class="quadradoIncluso"></td>
+            <td id="l16c11" class="quadradoIncluso"></td>
+            <td id="l16c12" class="quadradoIncluso"></td>
+            <td id="l16c13" class="quadrado"></td>
+            <td id="l16c14" class="quadradoIncluso"></td>
+            <td id="l16c15" class="quadradoIncluso"></td>
+            <td id="l16c16" class="quadradoIncluso"></td>
+            <td id="l16c17" class="quadradoIncluso"></td>
+            <td id="l16c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l17c1" class="quadrado"></td>
+            <td id="l17c2" class="quadrado"></td>
+            <td id="l17c3" class="quadrado"></td>
+            <td id="l17c4" class="quadradoIncluso"></td>
+            <td id="l17c5" class="quadrado"></td>
+            <td id="l17c6" class="quadrado"></td>
+            <td id="l17c7" class="quadradoIncluso"></td>
+            <td id="l17c8" class="quadrado"></td>
+            <td id="l17c9" class="quadrado"></td>
+            <td id="l17c10" class="quadrado"></td>
+            <td id="l17c11" class="quadradoIncluso"></td>
+            <td id="l17c12" class="quadrado"></td>
+            <td id="l17c13" class="quadradoIncluso"></td>
+            <td id="l17c14" class="quadrado"></td>
+            <td id="l17c15" class="quadrado"></td>
+            <td id="l17c16" class="quadrado"></td>
+            <td id="l17c17" class="quadrado"></td>
+            <td id="l17c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l18c1" class="quadrado"></td>
+            <td id="l18c2" class="quadrado"></td>
+            <td id="l18c3" class="quadrado"></td>
+            <td id="l18c4" class="quadradoIncluso"></td>
+            <td id="l18c5" class="quadrado"></td>
+            <td id="l18c6" class="quadrado"></td>
+            <td id="l18c7" class="quadrado"></td>
+            <td id="l18c8" class="quadrado"></td>
+            <td id="l18c9" class="quadrado"></td>
+            <td id="l18c10" class="quadrado"></td>
+            <td id="l18c11" class="quadradoIncluso"></td>
+            <td id="l18c12" class="quadrado"></td>
+            <td id="l18c13" class="quadradoIncluso"></td>
+            <td id="l18c14" class="quadrado"></td>
+            <td id="l18c15" class="quadrado"></td>
+            <td id="l18c16" class="quadrado"></td>
+            <td id="l18c17" class="quadrado"></td>
+            <td id="l18c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l19c1" class="quadrado"></td>
+            <td id="l19c2" class="quadrado"></td>
+            <td id="l19c3" class="quadrado"></td>
+            <td id="l19c4" class="quadradoIncluso"></td>
+            <td id="l19c5" class="quadrado"></td>
+            <td id="l19c6" class="quadrado"></td>
+            <td id="l19c7" class="quadrado"></td>
+            <td id="l19c8" class="quadrado"></td>
+            <td id="l19c9" class="quadrado"></td>
+            <td id="l19c10" class="quadrado"></td>
+            <td id="l19c11" class="quadradoIncluso"></td>
+            <td id="l19c12" class="quadrado"></td>
+            <td id="l19c13" class="quadradoIncluso"></td>
+            <td id="l19c14" class="quadrado"></td>
+            <td id="l19c15" class="quadrado"></td>
+            <td id="l19c16" class="quadrado"></td>
+            <td id="l19c17" class="quadrado"></td>
+            <td id="l19c18" class="quadrado"></td>
+        </tr>
+        <tr>
+            <td id="l20c1" class="quadrado"></td>
+            <td id="l20c2" class="quadrado"></td>
+            <td id="l20c3" class="quadrado"></td>
+            <td id="l20c4" class="quadrado"></td>
+            <td id="l20c5" class="quadrado"></td>
+            <td id="l20c6" class="quadrado"></td>
+            <td id="l20c7" class="quadrado"></td>
+            <td id="l20c8" class="quadrado"></td>
+            <td id="l20c9" class="quadrado"></td>
+            <td id="l20c10" class="quadrado"></td>
+            <td id="l20c11" class="quadrado"></td>
+            <td id="l20c12" class="quadrado"></td>
+            <td id="l20c13" class="quadradoIncluso"></td>
+            <td id="l20c14" class="quadrado"></td>
+            <td id="l20c15" class="quadrado"></td>
+            <td id="l20c16" class="quadrado"></td>
+            <td id="l20c17" class="quadrado"></td>
+            <td id="l20c18" class="quadrado"></td>
+        </tr>
+    </table>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function validarPergunta1() {
+        var res1 = resposta1.value
+
+        if (res1.toUpperCase() == 'CPU') {
+            l3c7.innerHTML = "C"
+            l3c8.innerHTML = "P"
+            l3c9.innerHTML = "U"
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta2() {
+        var res2 = resposta2.value
+
+        if (res2.toUpperCase() == 'ULA') {
+            l3c9.innerHTML = "U"
+            l4c9.innerHTML = "L"
+            l5c9.innerHTML = "A"
+        } else {
+            alert("Resposta Incorreta!")
+        }
+    }
+
+    function validarPergunta3() {
+        var res3 = resposta3.value
+
+        if (res3.toUpperCase() == 'REGISTRADORES') {
+            l5c2.innerHTML = "R"
+            l5c3.innerHTML = "E"
+            l5c4.innerHTML = "G"
+            l5c5.innerHTML = "I"
+            l5c6.innerHTML = "S"
+            l5c7.innerHTML = "T"
+            l5c8.innerHTML = "R"
+            l5c9.innerHTML = "A"
+            l5c10.innerHTML = "D"
+            l5c11.innerHTML = "O"
+            l5c12.innerHTML = "R"
+            l5c13.innerHTML = "E"
+            l5c14.innerHTML = "S"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta4() {
+        var res4 = resposta4.value
+
+        if (res4.toUpperCase() == 'ROM') {
+            l5c12.innerHTML = "R"
+            l6c12.innerHTML = "O"
+            l7c12.innerHTML = "M"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta5() {
+        var res5 = resposta5.value
+
+        if (res5.toUpperCase() == 'RAM') {
+            l7c10.innerHTML = "R"
+            l7c11.innerHTML = "A"
+            l7c12.innerHTML = "M"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta6() {
+        var res6 = resposta6.value
+
+        if (res6.toUpperCase() == 'EPROM') {
+            l5c3.innerHTML = "E"
+            l6c3.innerHTML = "P"
+            l7c3.innerHTML = "R"
+            l8c3.innerHTML = "O"
+            l9c3.innerHTML = "M"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta7() {
+        var res7 = resposta7.value
+
+        if (res7.toUpperCase() == 'FLASH') {
+            l2c14.innerHTML = "F"
+            l3c14.innerHTML = "L"
+            l4c14.innerHTML = "A"
+            l5c14.innerHTML = "S"
+            l6c14.innerHTML = "H"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta8() {
+        var res8 = resposta8.value
+
+        if (res8.toUpperCase() == 'MEMORIA DE MASSA') {
+            l9c3.innerHTML = "M"
+            l9c4.innerHTML = "E"
+            l9c5.innerHTML = "M"
+            l9c6.innerHTML = "O"
+            l9c7.innerHTML = "R"
+            l9c8.innerHTML = "I"
+            l9c9.innerHTML = "A"
+            l9c11.innerHTML = "D"
+            l9c12.innerHTML = "E"
+            l9c14.innerHTML = "M"
+            l9c15.innerHTML = "A"
+            l9c16.innerHTML = "S"
+            l9c17.innerHTML = "S"
+            l9c18.innerHTML = "A"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta9() {
+        var res9 = resposta9.value
+
+        if (res9.toUpperCase() == 'DMA') {
+            l7c18.innerHTML = "D"
+            l8c18.innerHTML = "M"
+            l9c18.innerHTML = "A"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta10() {
+        var res10 = resposta10.value
+
+        if (res10.toUpperCase() == 'CS') {
+            l12c10.innerHTML = "C"
+            l13c10.innerHTML = "S"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta11() {
+        var res11 = resposta11.value
+
+        if (res11.toUpperCase() == 'ADDRESS BUS') {
+            l13c4.innerHTML = "A"
+            l13c5.innerHTML = "D"
+            l13c6.innerHTML = "D"
+            l13c7.innerHTML = "R"
+            l13c8.innerHTML = "E"
+            l13c9.innerHTML = "S"
+            l13c10.innerHTML = "S"
+            l13c12.innerHTML = "B"
+            l13c13.innerHTML = "U"
+            l13c14.innerHTML = "S"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta12() {
+        var res12 = resposta12.value
+
+        if (res12.toUpperCase() == 'DATA BUS') {
+            l12c4.innerHTML = "D"
+            l13c4.innerHTML = "A"
+            l14c4.innerHTML = "T"
+            l15c4.innerHTML = "A"
+            l17c4.innerHTML = "B"
+            l18c4.innerHTML = "U"
+            l19c4.innerHTML = "S"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta13() {
+        var res13 = resposta13.value
+
+        if (res13.toUpperCase() == 'I5') {
+            l5c5.innerHTML = "I"
+            l6c5.innerHTML = "5"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta14() {
+        var res14 = resposta14.value
+
+        if (res14.toUpperCase() == 'I7') {
+            l9c8.innerHTML = "I"
+            l10c8.innerHTML = "7"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta15() {
+        var res15 = resposta15.value
+
+        if (res15.toUpperCase() == 'DUAL CORE') {
+            l12c13.innerHTML = "D"
+            l13c13.innerHTML = "U"
+            l14c13.innerHTML = "A"
+            l15c13.innerHTML = "L"
+            l17c13.innerHTML = "C"
+            l18c13.innerHTML = "O"
+            l19c13.innerHTML = "R"
+            l20c13.innerHTML = "E"
+
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta16() {
+        var res16 = resposta16.value
+
+        if (res16.toUpperCase() == 'QUAD CORE') {
+            l16c9.innerHTML = "Q"
+            l16c10.innerHTML = "U"
+            l16c11.innerHTML = "A"
+            l16c12.innerHTML = "D"
+            l16c14.innerHTML = "C"
+            l16c15.innerHTML = "O"
+            l16c16.innerHTML = "R"
+            l16c17.innerHTML = "E"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta17() {
+        var res17 = resposta17.value
+
+        if (res17.toUpperCase() == 'THREADS') {
+            l11c7.innerHTML = "T"
+            l12c7.innerHTML = "H"
+            l13c7.innerHTML = "R"
+            l14c7.innerHTML = "E"
+            l15c7.innerHTML = "A"
+            l16c7.innerHTML = "D"
+            l17c7.innerHTML = "S"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+
+    function validarPergunta18() {
+        var res18 = resposta18.value
+
+        if (res18.toUpperCase() == 'CACHE') {
+            l15c11.innerHTML = "C"
+            l16c11.innerHTML = "A"
+            l17c11.innerHTML = "C"
+            l18c11.innerHTML = "H"
+            l19c11.innerHTML = "E"
+
+        } else {
+            alert("Resposta Incorreta!")
+        }
+
+    }
+</script>
